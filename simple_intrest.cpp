@@ -1,18 +1,25 @@
 //Cpp program to calculate simple intrest
 
-
 #include<iostream>
 using namespace std;
-int main()
-{
-  float p, t, r, interest;
 
-  cout << "Enter principal amount, time and rate:";
-  cin >> p >> t >> r;
+int main(){
 
-  interest = (p*t*r)/100;
+    int principal,rate,time,simple_interest;
 
-  cout << "Interest = " << interest << endl;
+    cout<<"enter the principal amount\n";
+    cin>>principal;
 
-  return 0;
+    cout<<"enter the rate of interest\n";
+    cin>>rate;
+
+    cout<<"enter the time in years\n";
+    cin>>time;
+
+    simple_interest=(principal*rate*time)/100;
+
+    cout<<"simple interest="<<simple_interest;
+
+
+    return 0;
 }
